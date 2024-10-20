@@ -10,7 +10,7 @@ export default function EventSlider() {
   const [events, setEvents] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/event")
+      .get("http://localhost:3000/api/event/list")
       .then((response) => {
         setEvents(response.data.LatestAuction);
       })
