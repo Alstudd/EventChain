@@ -4,6 +4,8 @@ import HeroSection from "./components/Home/HeroSection";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "./layouts/Main";
 import Discover from "./pages/Discover";
+import Create from "./components/Create";
+import EventSlider from "./components/EventSlider";
 
 const router = createBrowserRouter([
   {
@@ -29,7 +31,8 @@ const router = createBrowserRouter([
           <div className="min-h-screen overflow-x-hidden">
             <div className="gradient-bg-welcome">
               <Navbar />
-              <Discover />
+              {/* <Discover /> */}
+              <EventSlider />
             </div>
             <Footer />
           </div>
@@ -41,7 +44,7 @@ const router = createBrowserRouter([
           <div className="min-h-screen overflow-x-hidden">
             <div className="gradient-bg-welcome">
               <Navbar />
-              Create
+              <Create />
             </div>
             <Footer />
           </div>
