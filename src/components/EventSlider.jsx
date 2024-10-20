@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import eventSliderDetails from "../data/eventSliderDetails";
 import { eventSliderSettings } from "../data/eventSliderSettings";
+import axios from "axios";
 
 export default function EventSlider() {
   // get all events from api
