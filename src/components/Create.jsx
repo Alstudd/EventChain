@@ -78,7 +78,7 @@ const Create = () => {
             name="eventName"
             value={formData.eventName}
             onChange={handleInputChange}
-            className="w-full p-2 border-2 border-indigo-500 rounded-md focus:outline-none focus:border-purple-600 transition duration-300"
+            className="w-full p-2 border-2 border-[#00b386] rounded-md focus:outline-none transition duration-300"
             placeholder="Enter event name"
             required
           />
@@ -92,7 +92,7 @@ const Create = () => {
             name="eventDescription"
             value={formData.eventDescription}
             onChange={handleInputChange}
-            className="w-full p-2 border-2 border-indigo-500 rounded-md focus:outline-none focus:border-purple-600 transition duration-300"
+            className="w-full p-2 border-2 border-[#00b386] rounded-md focus:outline-none transition duration-300"
             placeholder="Enter event description"
             required
           ></textarea>
@@ -107,7 +107,7 @@ const Create = () => {
             name="eventDate"
             value={formData.eventDate}
             onChange={handleInputChange}
-            className="w-full p-2 border-2 border-indigo-500 rounded-md focus:outline-none focus:border-purple-600 transition duration-300"
+            className="w-full p-2 border-2 border-[#00b386] rounded-md focus:outline-none transition duration-300"
             required
           />
         </div>
@@ -119,7 +119,7 @@ const Create = () => {
           <input
             type="file"
             onChange={handleImageChange}
-            className="w-full p-2 border-2 border-indigo-500 rounded-md focus:outline-none focus:border-purple-600 transition duration-300"
+            className="w-full p-2 border-2 border-[#00b386] rounded-md focus:outline-none transition duration-300"
             required
           />
           {imagePreview && (
@@ -134,7 +134,7 @@ const Create = () => {
         <button
           onClick={handleSubmit}
           type="submit"
-          className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline transition duration-300"
+          className="w-full bg-[#00b386] text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline transition duration-300"
           disabled={isUploading}
         >
           {isUploading ? "Uploading..." : "Submit Event"}
