@@ -47,14 +47,16 @@ const Create = () => {
       );
 
       const imageUrl = response.data.secure_url;
-      console.log({
-        eventName: formData.eventName,
-        eventDescription: formData.eventDescription,
-        eventDate: formData.eventDate,
-        eventImageUrl: imageUrl,
-      });
+      const eventData = {
+        title: formData.eventName,
+        description: formData.eventDescription,
+        date: formData.eventDate,
+        image: imageUrl,
+      };
 
-      alert("Event submitted successfully!");
+      const eventResponse = await axios.post('http://localhost:3000/api/event/create', eventData)
+
+      alert(`Event created successfully! Link: ${eventResponse.data.link}`);
     } catch (error) {
       console.error("Error uploading image to Cloudinary:", error);
     } finally {
