@@ -64,7 +64,7 @@ const Create = () => {
 
   return (
     <div className="min-h-[90vh] flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg max-w-lg w-full">
+      <div className="bg-white my-5 p-8 rounded-lg shadow-lg max-w-lg w-full">
         <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">
           Create Event
         </h2>
